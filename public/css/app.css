@@ -1,0 +1,451 @@
+@font-face {
+    font-family: "myFont";
+    src: url("../fonts/BaiJamjuree-Regular.ttf");
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family:  "myFont",'Courier New', Courier, monospace;
+}
+
+
+a:hover {
+    color: hsl(171, 66%, 44%);
+}
+
+
+.hero_section {
+    background-image: url("../images/bg-header-desktop.png");
+    background-size: cover;
+    background-position: top;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5vh;
+}
+
+.hero_section>.description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2vh;
+    text-align: center;
+}
+
+.hero_section>.description>h1 {
+    font-size: 3vw;
+    color: hsl(210, 10%, 33%);
+}
+
+.hero_section>.description>p {
+    font-size: 18px;
+    width: 80%;
+    line-height: 4vh;
+    color: hsl(201, 11%, 66%);
+}
+
+
+.cta {
+    display: flex;
+    gap: 1.5vw;
+}
+
+.cta>button {
+    padding: 2vh 3vw;
+    border-radius: 50px;
+    border: none;
+    color: white;
+
+}
+
+.ios {
+    background: hsl(171, 66%, 44%);
+
+}
+
+.ios:hover {
+    box-shadow: 0 5px 15px hsla(171, 66%, 44%, 0.703);
+}
+
+.mac {
+    background: hsl(233, 100%, 69%);
+
+}
+
+.mac:hover {
+    box-shadow: 0 5px 15px hsla(233, 100%, 69%, 0.707);
+
+}
+
+
+
+
+/* *section about */
+
+.about,
+.access {
+    display: flex;
+    flex-direction: column;
+    padding: 3vh 0;
+    gap: 6vh;
+}
+
+.about>.intro,
+.access>div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 2vh;
+}
+
+.about>.intro>h1,
+.access>div>h1 {
+    color: hsl(210, 10%, 33%);
+}
+
+.about>.intro>p,
+.access>div>p {
+    width: 40%;
+    line-height: 3vh;
+
+    color: hsl(201, 11%, 66%);
+}
+
+.about>.computer_and_dec {
+    display: flex;
+    gap: 3vw;
+
+}
+
+
+.about>.computer_and_dec>img {
+
+    position: relative;
+    left: -1.5%;
+}
+
+
+
+
+.about>.computer_and_dec>div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+
+.about>.computer_and_dec>div>div {
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    width: 60%;
+    font-size: 18px;
+    line-height: 4vh;
+    color: hsl(201, 11%, 66%);
+}
+
+.about>.computer_and_dec>div>div>h3 {
+    font-size: 1.8rem;
+    color: hsl(210, 10%, 33%);
+}
+
+.access {
+    align-items: center;
+}
+
+.access>div>p {
+    width: 80%;
+}
+
+
+.access>img {
+    width: 50%;
+}
+
+
+.workflow {
+    padding: 2vh 0;
+
+}
+
+.workflow>.intro {
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    align-items: center;
+    text-align: center;
+}
+
+
+.workflow>.elements {
+
+    padding: 9vh 0;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 3vw;
+}
+
+
+
+.workflow>.elements>div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3vw;
+    width: calc((100% / 3) - 3vw);
+
+}
+
+
+.workflow>.elements>div>h1 {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.workflow>.elements>div>p,
+.workflow>div>p,
+.downloads>p {
+    width: 80%;
+    text-align: center;
+    font-size: 18px;
+    line-height: 4vh;
+
+    color: hsl(201, 11%, 66%);
+}
+
+
+.workflow>div>h1,
+.elements>div>h1,
+.downloads>h1 {
+    color: hsl(210, 10%, 33%);
+}
+
+.sponsors {
+    padding: 4vh;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+
+    place-items: center;
+}
+
+.downloads {
+    padding: 16vh 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 4vh;
+}
+
+.downloads>p {
+    width: 50%;
+}
+
+footer {
+    padding: 4vh 2vw;
+    background-color: hsl(201, 11%, 66%);
+    display: grid;
+    grid-template-columns: 1fr 4fr 2fr;
+}
+
+footer>div>a,
+footer>nav>a {
+    text-decoration: none;
+    color: hsl(210, 10%, 33%);
+}
+
+
+footer>img {
+    width: 30%;
+}
+
+footer>nav {
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+footer>div {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding: 0vh 3vw;
+    gap: 2vh;
+}
+
+
+
+@media (max-width: 440px) {
+
+
+    .hero_section {
+        background-image: url("../images/bg-header-mobile.png");
+        gap: 8vh;
+        padding-inline: 3vw;
+    }
+
+    .hero_section>img {
+        width: 25%;
+        padding-bottom: 5vh;
+    }
+
+    .hero_section>.description {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2vh;
+        text-align: center;
+    }
+
+    .hero_section>.description>h1 {
+        font-size: 2.5rem;
+        width: 90%;
+    }
+
+    .hero_section>.description>p {
+        width: 90%;
+    }
+
+
+    .cta {
+        flex-direction: column;
+        gap: 4vw;
+        width: 80%;
+    }
+
+    .cta>button {
+        padding: 3vh;
+    }
+
+
+    .about {
+        padding-inline: 4vw;
+    }
+
+    .about>.intro>p,
+    .about>.intro>h1 {
+        width: 90%;
+
+    }
+
+    .about>.computer_and_dec {
+        align-items: center;
+        flex-direction: column;
+        gap: 8vh;
+    }
+
+    .about>.computer_and_dec>img {
+        width: 80%;
+        position: relative;
+        left: 0%;
+    }
+
+
+    .about>.computer_and_dec>div {
+        /* padding: 4vh 0; */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        gap: 8vh;
+    }
+
+
+    .about>.computer_and_dec>div>div {
+        gap: 3vh;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        line-height: 4vh;
+    }
+
+    .about>.computer_and_dec>div>div>h3 {
+        font-size: 1.5rem;
+        color: hsl(210, 10%, 33%);
+    }
+
+    .about>.computer_and_dec>div>div>p {
+        font-size: 18px;
+        color: hsl(201, 11%, 66%);
+    }
+
+
+
+    .access {
+
+        padding: 30vh 2vw;
+    }
+
+
+    .access>div>h1 {
+        font-size: 1.5rem;
+    }
+
+
+    .access>div>p {
+        font-size: 18px;
+        line-height: 4vh;
+    }
+
+
+    .access>img {
+        width: 80%;
+    }
+
+
+    .workflow>.elements {
+        flex-direction: column;
+        gap: 20vh;
+    }
+
+    .workflow>.elements>div {
+        width: 100%;
+        gap: 4vh;
+    }
+
+    .sponsors {
+        grid-template-columns: 1fr;
+        gap: 10vh;
+    }
+
+    .downloads {
+        padding: 30vh 0;
+    }
+
+    .downloads>h1 {
+        font-size: 1.8rem;
+    }
+
+    .downloads>p {
+        font-size: 18px;
+        width: 80%;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 8vh;
+    }
+
+    footer>nav {
+        grid-template-columns: repeat(1, 1fr);
+        text-align: center;
+        gap: 4vh;
+    }
+
+    footer>div {
+        align-items: center;
+        gap: 5vw;
+    }
+
+
+    footer>img {
+        width: 10%;
+    }
+
+
+}
